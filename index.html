@@ -1,15 +1,29 @@
-      <script>
-         var password = "interesting";
-         (function passcodeprotect() {
-            var passcode = prompt("Enter PassCode");
-            while (passcode !== password) {
-               alert("Incorrect PassCode");
-               return passcodeprotect();
+<!DOCTYPE HTML>
+<html>
+<body>
+      <center>
+         <input type="password" placeholder="passcode" id="tutorial">
+         <button onclick="protectpasscode()">CHECK</button>
+         <script>
+            function pr
+otectpasscode() {
+               const result = document.getElementById("tutorial").value;
+               let passcode = 12345;
+               let space = '';
+               if (result == space) {
+                  alert("Type passcode")
+               } else {
+                  if (result == passcode) {
+                     document.write("<center><h1>TP, The Best E-Learning </h1></center>");
+                  } else {
+                     alert("Incorrect Passcode");
+                     location.reload();
+                  }
+               }
             }
-         }());
-         alert('Welcome To The TP..!');
-
-      </script>
+         </script>
+      </center>
+   </body>
 
 <h2>All prices are stated in hours (h), one hour is equal to the hourly minimal wage in Slovenia (6,17 EUR), that's how long it usually takes me to finish each piece (multiply the hours with the minimal wage to get the price) (art examples coming soon, <a href="https://nightbush.github.io/links/">contact me</a> to get them for now)</h2>
 <br><o>I can't do shading that well yet so that option is excluded from the prices for now!</o></br>
@@ -20,3 +34,4 @@
            <p>Lineart + coloring: 3-4h</p>
 <h2>Fullbody:</h2> <h3>Sketch: 4,5h-6h</p>
           <p>Lineart + coloring: 6h-7h</p>
+</html>
